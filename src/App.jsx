@@ -30,7 +30,7 @@ function App () {
           <Listado />
         </section>
         {/* ?Barra lateral */ }
-        <aside className="lateral">
+        <aside className="sidebar">
           <Buscador />
           <Crear />
           

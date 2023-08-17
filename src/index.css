@@ -33,7 +33,7 @@ body {
   grid-template-areas:
     "header header header header"
     "nav nav nav nav"
-    "content content content lateral"
+    "content content content sidebar"
     "footer footer footer footer"
   ;
   grid-template-rows: 100px 70px auto 70px;
@@ -118,7 +118,7 @@ body {
   align-items: flex-start;
 }
 
-.peli-item {
+.movie-item {
   flex-grow: 1;
   border-radius: 10px;
   box-shadow: 0px 0px 6px #ddd;
@@ -129,7 +129,7 @@ body {
   padding-right: 25px;
 }
 
-.peli-item .edit {
+.movie-item .edit {
   margin-right: 8px;
 }
 
@@ -159,14 +159,14 @@ input[type="submit"] {
   background: linear-gradient(160deg, #460101 0%, #e73b3b 75%);
 }
 
-/* *ESTILOS BARRA LATERAL************************************* */
-.lateral {
-  grid-area: lateral;
+/* *ESTILOS BARRA sidebar************************************* */
+.sidebar {
+  grid-area: sidebar;
   border-left: 1px solid #6e6e6e;
   padding: 20px;
 }
 
-.lateral > div {
+.sidebar > div {
   box-sizing: border-box;
   width: 90%;
   margin: 20px;
@@ -176,8 +176,8 @@ input[type="submit"] {
   box-shadow: 0px 0px 6px #ddd;
 }
 
-.lateral input[type="text"],
-.lateral textarea {
+.sidebar input[type="text"],
+.sidebar textarea {
   display: block;
   margin: 0 auto;
   margin-top: 15px;
@@ -217,11 +217,11 @@ input[type="submit"] {
     align-items: center;
   }
 
-  .peli-item {
+  .movie-item {
     width: 80%;
   }
 
-  .lateral {
+  .sidebar {
     border-left: none;
   }
 }
