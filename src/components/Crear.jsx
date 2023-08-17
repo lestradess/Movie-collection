@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { SaveStorage } from '../helpers/SaveStoraje';
 
 
 
@@ -16,10 +17,12 @@ export const Crear = () => {
             title,
             description
         }
+        //Save state
         setmovieState(movie);
-        //Guardar en el local storage
-        
+        //Save in localStorage
+        SaveStorage("movies", movie);
     }
+
 
     return (
         <>
