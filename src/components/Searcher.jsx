@@ -1,5 +1,5 @@
 
-export const Buscador = () =>  {
+export const Searcher = () =>  {
     return (
     <>
         <div className="search">

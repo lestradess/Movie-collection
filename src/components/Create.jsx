@@ -3,7 +3,8 @@ import { SaveStorage } from '../helpers/SaveStoraje';
 
 
 
-export const Crear = () => {
+// eslint-disable-next-line react/prop-types
+export const Create = ({setListState}) => {
 
     const titleComponent = "Añadir películas";
     const [ movieState, setmovieState ] = useState({})
@@ -19,6 +20,10 @@ export const Crear = () => {
         }
         //Save state
         setmovieState(movie);
+        //Update listState
+        setListState(items =>{
+            return [...items, movie];
+        });
         //Save in localStorage
         SaveStorage("movies", movie);
     }
