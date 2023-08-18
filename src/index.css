@@ -228,3 +228,6 @@ input[type="submit"] {
     border-left: none;
   }
 }
+.no-found{
+  color: red;
+}

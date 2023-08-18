@@ -35,7 +35,7 @@ function App () {
         </section>
         {/* ?Barra lateral */ }
         <aside className="sidebar">
-          <Searcher />
+          <Searcher listState={ listState } setListState={ setListState } />
           <Create setListState={setListState}/>
 
         </aside>
